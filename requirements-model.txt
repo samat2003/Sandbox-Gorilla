@@ -1,0 +1,9 @@
+# Exact Python packages used by the successful GB10 run.
+# Install in a separate Python 3.12 environment on a CUDA-capable Linux host.
+torch==2.14.0
+transformers==5.17.0
+peft==0.21.0
+bitsandbytes==0.50.2
+safetensors==0.8.0
+accelerate==1.15.0
+huggingface-hub==1.33.0

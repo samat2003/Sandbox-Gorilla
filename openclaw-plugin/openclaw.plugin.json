@@ -1,0 +1,1 @@
+{"id":"sandbox-gorilla","name":"Sandbox Gorilla","description":"Mandatory guarded inbox actions","configSchema":{"type":"object","properties":{"gatewayUrl":{"type":"string"}},"additionalProperties":false}}

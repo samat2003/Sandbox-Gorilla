@@ -1,0 +1,8 @@
+version: email-retention-v1
+protected_classifications: [finance, executive, legal]
+protected_sender_roles: [CFO, CEO, general_counsel]
+autonomous_delete_prohibited: true
+allowed_operations: [DELETE, ARCHIVE, KEEP, FLAG]
+preferences:
+  resolved_without_obligations: archive_and_preserve_correspondence
+  unresolved_important: flag_and_preserve_correspondence

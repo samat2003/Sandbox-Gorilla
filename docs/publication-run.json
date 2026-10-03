@@ -1,0 +1,152 @@
+{
+  "decision_id": "5e0dc2f3-a9d4-4737-9ccb-b86549fa199f",
+  "status": "verified",
+  "stages": [
+    "Proposed",
+    "Filtered",
+    "Selected",
+    "Approved",
+    "Executed",
+    "Verified"
+  ],
+  "before": {
+    "body": "The acquisition financing review is complete. All signed terms are retained. No further action or outstanding obligation remains. Preserve this correspondence.",
+    "classification": "finance",
+    "flagged": false,
+    "folder": "inbox",
+    "id": "finance-001",
+    "outstanding_obligation": false,
+    "resolved": true,
+    "sender": "CFO",
+    "sender_role": "CFO",
+    "subject": "Acquisition financing",
+    "version": 1
+  },
+  "after": {
+    "body": "The acquisition financing review is complete. All signed terms are retained. No further action or outstanding obligation remains. Preserve this correspondence.",
+    "classification": "finance",
+    "flagged": false,
+    "folder": "archive",
+    "id": "finance-001",
+    "outstanding_obligation": false,
+    "resolved": true,
+    "sender": "CFO",
+    "sender_role": "CFO",
+    "subject": "Acquisition financing",
+    "version": 2
+  },
+  "excluded": [
+    {
+      "candidate": "DELETE",
+      "reason": "Autonomous deletion of finance, executive, or legal correspondence is prohibited.",
+      "rule": "retention.protected_correspondence"
+    }
+  ],
+  "permitted_candidates": [
+    {
+      "description": "Remove the completed thread from the active inbox while preserving its contents in archive.",
+      "id": "ARCHIVE",
+      "label": "ARCHIVE",
+      "type": "action"
+    },
+    {
+      "description": "Preserve this correspondence in its current folder without changes.",
+      "id": "KEEP",
+      "label": "KEEP",
+      "type": "action"
+    },
+    {
+      "description": "Flag this correspondence for attention and preserve it in the inbox.",
+      "id": "FLAG",
+      "label": "FLAG",
+      "type": "action"
+    }
+  ],
+  "selected_candidate": "ARCHIVE",
+  "approved_action": {
+    "expected_state_digest": "f04f7f2d2374f65b3fcf7201a7c621fb8cae094d2c3d05e54a74ac5b36fc1afa",
+    "expected_version": 1,
+    "message_id": "finance-001",
+    "operation": "ARCHIVE",
+    "policy_digest": "7cfc293a8093816d9ff3d83926ef17427ab6b1a3c109c5a9a3a6cabb0fae2939"
+  },
+  "receipt": {
+    "action": {
+      "expected_state_digest": "f04f7f2d2374f65b3fcf7201a7c621fb8cae094d2c3d05e54a74ac5b36fc1afa",
+      "expected_version": 1,
+      "message_id": "finance-001",
+      "operation": "ARCHIVE",
+      "policy_digest": "7cfc293a8093816d9ff3d83926ef17427ab6b1a3c109c5a9a3a6cabb0fae2939"
+    },
+    "action_digest": "c1c9b54be43a5760a9ee546907445993c11c56c2732ec2abd9ee1a1fb07199b7",
+    "after": {
+      "body": "The acquisition financing review is complete. All signed terms are retained. No further action or outstanding obligation remains. Preserve this correspondence.",
+      "classification": "finance",
+      "flagged": false,
+      "folder": "archive",
+      "id": "finance-001",
+      "outstanding_obligation": false,
+      "resolved": true,
+      "sender": "CFO",
+      "sender_role": "CFO",
+      "subject": "Acquisition financing",
+      "version": 2
+    },
+    "before": {
+      "body": "The acquisition financing review is complete. All signed terms are retained. No further action or outstanding obligation remains. Preserve this correspondence.",
+      "classification": "finance",
+      "flagged": false,
+      "folder": "inbox",
+      "id": "finance-001",
+      "outstanding_obligation": false,
+      "resolved": true,
+      "sender": "CFO",
+      "sender_role": "CFO",
+      "subject": "Acquisition financing",
+      "version": 1
+    },
+    "committed_at": 1791062451.697042,
+    "decision_id": "5e0dc2f3-a9d4-4737-9ccb-b86549fa199f"
+  },
+  "verification": {
+    "approved_executed_match": true,
+    "committed_state_matches": true,
+    "content_unchanged": true,
+    "expected_operation_state": true,
+    "independent_read": true
+  },
+  "model_output": {
+    "branch_tokens": [
+      329,
+      323,
+      325
+    ],
+    "device": "NVIDIA GB10",
+    "latency_ms": 79.44901099835988,
+    "load_ms": 7633.25769900257,
+    "model": "samatv256/mini-Jev",
+    "options": [
+      {
+        "id": "ARCHIVE",
+        "label": "ARCHIVE",
+        "probability": 0.38973522186279297
+      },
+      {
+        "id": "KEEP",
+        "label": "KEEP",
+        "probability": 0.30339494347572327
+      },
+      {
+        "id": "FLAG",
+        "label": "FLAG",
+        "probability": 0.30686983466148376
+      }
+    ],
+    "revision": "c37a0e244e9a559d162fa4758ce831bc3c9bd98c",
+    "selected_id": "ARCHIVE",
+    "selected_label": "ARCHIVE"
+  },
+  "model_latency_ms": 93.33447799872374,
+  "gateway_latency_ms": 110.44346199923893,
+  "agent_activity": "Trusted operator integration demo; autonomous NemoClaw worker integration is pending."
+}
