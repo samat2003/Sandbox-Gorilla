@@ -61,7 +61,7 @@ Employee objective: **“Handle my morning operations. Clean up the inbox and pr
 5. Execute **exactly ARCHIVE** from that stored approval, preserving the email.
 6. Independently read committed state and verify the outcome.
 
-The proven run uses an operator-origin proposal through the same guarded business API intended for the autonomous worker. It demonstrates the decision and execution primitive, not a completed autonomous worker integration.
+The demonstrated run exercises the complete Gorilla decision and execution path through the guarded business API; autonomous worker attachment is the next integration step.
 
 ## Why a decision model?
 
